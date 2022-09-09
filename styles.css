@@ -27,39 +27,72 @@ body{
     font-family: "Overpass", sans-serif;
 }
 
-.rating-container{
+.container{
     margin: 1.5rem;
-    padding: 1.5rem;
     background: linear-gradient(
         180deg,  var(--gradient-start), var(--gradient-end)
     );
     border-radius: 15px;
-    box-shadow: 0 1rem 1rem hsla(359, 0%, 0%, 0.2);
+    box-shadow: 0 1rem 1rem hsla(359, 0%, 0%, 0.1%);
+}
+
+.rating{
+    display: none; /* for style development */
+    padding: 1.5rem 1.5rem;
+}
+
+.thankyou {
+    padding: 2.5rem 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .circle-icon{
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     border-radius: 50%;
     background-color: hsla(0, 0%, 100%, 5%);
 }
 
-h1{
+.circle-icon img{
+    width: 0.5rem;
+}
+
+h1, h2{
     color: var(--white);
     font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
 }
 
 p{
     color: var(--light-grey);
     font-size: 0.8rem;
+    margin-bottom: 1.6rem;
+    line-height: 1.4rem;
+}
+
+.thankyou p{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+p.selection{
+    display: block;
+    color: #ea914f;
+    background-color: hsla(0, 0%, 100%, 5%);
+    padding: 0.25rem 1rem;
+    border-radius: 3rem;
     margin-bottom: 2rem;
-    line-height: 1.3rem;
+}
+
+.thankyou img{
+    margin-bottom: 2rem;
 }
 
 .ratings{
@@ -67,7 +100,7 @@ p{
     justify-content: space-between;
     color: var(--medium-grey);
     font-size: 1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
 }
 
 button{
@@ -79,10 +112,6 @@ button{
     text-transform: uppercase;
     color: var(--white);
     letter-spacing: 0.1rem;
-}
-
-.thankyou-container{
-    display: none; /* for styling development */
 }
 
 footer{
