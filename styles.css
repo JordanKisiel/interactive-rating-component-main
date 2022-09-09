@@ -37,13 +37,13 @@ body{
 }
 
 .rating{
-    display: none; /* for style development */
     padding: 1.5rem 1.5rem;
 }
 
 .thankyou {
     padding: 2.5rem 1.3rem;
     display: flex;
+    display: none; /* for style development */
     flex-direction: column;
     align-items: center;
 }
@@ -60,7 +60,7 @@ body{
 }
 
 .circle-icon img{
-    width: 0.5rem;
+    width: 0.9rem;
 }
 
 h1, h2{
@@ -88,11 +88,12 @@ p.selection{
     background-color: hsla(0, 0%, 100%, 5%);
     padding: 0.25rem 1rem;
     border-radius: 3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.8rem;
 }
 
 .thankyou img{
-    margin-bottom: 2rem;
+    margin-bottom: 1.8rem;
+    width: 9rem;
 }
 
 .ratings{
@@ -101,6 +102,17 @@ p.selection{
     color: var(--medium-grey);
     font-size: 1rem;
     margin-bottom: 0.3rem;
+}
+
+.ratings span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ratings span:hover, .ratings span:focus{
+    background-color: var(--orange);
+    color: var(--white);
 }
 
 button{
@@ -112,6 +124,11 @@ button{
     text-transform: uppercase;
     color: var(--white);
     letter-spacing: 0.1rem;
+}
+
+button:hover{
+    background-color: var(--white);
+    color: var(--orange);
 }
 
 footer{
