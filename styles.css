@@ -37,13 +37,13 @@ body{
 }
 
 .rating{
+    display: none; /* for style development */
     padding: 1.5rem 1.5rem;
 }
 
 .thankyou {
     padding: 2.5rem 1.3rem;
     display: flex;
-    display: none; /* for style development */
     flex-direction: column;
     align-items: center;
 }
@@ -113,6 +113,7 @@ p.selection{
 .ratings span:hover, .ratings span:focus{
     background-color: var(--orange);
     color: var(--white);
+    cursor: pointer;
 }
 
 button{
@@ -126,7 +127,8 @@ button{
     letter-spacing: 0.1rem;
 }
 
-button:hover{
+button:hover, botton:focus{
+    cursor: pointer;
     background-color: var(--white);
     color: var(--orange);
 }
@@ -144,4 +146,49 @@ footer{
 
 .attribution a{
     color: hsl(228, 45%, 44%);
+}
+
+/* desktop */
+@media only screen and (min-width: 400px){
+    .container{
+        max-width: 26rem;
+        padding: 2.3rem;
+    }
+
+    h1, h2{
+        font-size: 1.75rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .circle-icon {
+        margin-bottom: 2rem;
+    }
+
+    p{
+        font-size: 1rem;
+        margin-bottom: 1.6rem;
+        line-height: 1.4rem;
+    }
+
+    .ratings{
+        margin-bottom: 0;
+    }
+    
+    button{
+        font-size: 1rem;
+    }
+
+    .circle-icon{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .thankyou {
+        padding: 3rem 1.6rem;
+    }
+
+    .thankyou img{
+        margin-bottom: 2.2rem;
+        width: 10rem;
+    }
 }
